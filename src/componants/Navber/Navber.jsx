@@ -45,9 +45,9 @@ function Navber() {
     </>
   );
   return (
-    <div class="navbar bg-base-100 w-11/12 mx-auto py-5 my-3 top-0 sticky z-20 bg-transparent backdrop-blur-lg">
-      <div class="navbar-start">
-        <div class="dropdown">
+    <div className="navbar bg-base-100 w-11/12 mx-auto py-5 my-3 top-0 sticky z-20 bg-transparent backdrop-blur-lg">
+      <div className="navbar-start">
+        <div className="dropdown">
           <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -66,18 +66,18 @@ function Navber() {
           </div>
           <ul
             tabindex="0"
-            class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow font-semibold text-lg"
+            className="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow font-semibold text-lg"
           >
             {Link}
           </ul>
         </div>
-        <a class="btn btn-ghost lg:text-3xl font-bold text-2xl">Career Launch</a>
+        <a className="btn btn-ghost lg:text-3xl font-bold text-2xl">Career Launch</a>
       </div>
-      <div class="navbar-center hidden lg:flex">
+      <div className="navbar-center hidden lg:flex">
         <ul class="menu menu-horizontal px-1 font-semibold text-lg">{Link}</ul>
       </div>
-      <div class="navbar-end">
-        <a class="btn bg-gradient-to-r from-cyan-500 to-blue-500 text-white text-md font-semibold">Star Applying</a>
+      <div className="navbar-end">
+        <a className="btn bg-gradient-to-r from-cyan-500 to-blue-500 text-white text-md font-semibold">Star Applying</a>
       </div>
     </div>
   );

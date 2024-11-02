@@ -5,7 +5,7 @@ function Banner() {
     <div className="hero bg-blue-50 pt-6">
       <div className="flex-row md:flex justify-around items-center lg:flex-row-reverse">
         <img src={BanngerMan} className="h-full" />
-        <div>
+        <div className="ml-10">
           <h1 className="text-5xl font-bold">
             One Step Closer To Your <p className="text-blue-500">Dream Job</p>
           </h1>
