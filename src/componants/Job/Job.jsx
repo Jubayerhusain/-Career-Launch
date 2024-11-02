@@ -1,9 +1,11 @@
 import { MdLocationCity } from "react-icons/md";
 import { RiMoneyDollarCircleLine } from "react-icons/ri";
+import { Link } from "react-router-dom";
 
 function Job({ job }) {
-//   console.log(job);
+  //   console.log(job);
   const {
+    id,
     logo,
     job_title,
     company_name,
@@ -28,12 +30,24 @@ function Job({ job }) {
         </p>
       </div>
       <div className="flex space-x-3 items-center">
-        <p className="flex"><span className="mt-1 ml-1"><MdLocationCity /> </span><span>{location}</span></p>
-        <p className="flex"><span className="mt-1 ml-1"><RiMoneyDollarCircleLine /> </span><span>salary: {salary}</span></p>
+        <p className="flex">
+          <span className="mt-1 ml-1">
+            <MdLocationCity />{" "}
+          </span>
+          <span>{location}</span>
+        </p>
+        <p className="flex">
+          <span className="mt-1 ml-1">
+            <RiMoneyDollarCircleLine />{" "}
+          </span>
+          <span>salary: {salary}</span>
+        </p>
       </div>
-      <button className="btn bg-gradient-to-r from-cyan-500 to-blue-500 text-white text-md font-semibold">
-        View Details
-      </button>
+      <Link to={`/jobDetails/${id}`}>
+        <a className="btn bg-gradient-to-r from-cyan-500 to-blue-500 text-white text-md font-semibold">
+          View Details
+        </a>
+      </Link>
     </div>
   );
 }
