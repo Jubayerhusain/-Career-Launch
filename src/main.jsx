@@ -6,10 +6,12 @@ import {
   RouterProvider,
 } from "react-router-dom";
 import Layout from "./componants/Layout/Layout";
+import Error from './componants/ErrorPage/Error';
 const router = createBrowserRouter([
   {
     path: "/",
     element: <Layout />,
+    errorElement: <Error />
   },
 ]);
 createRoot(document.getElementById('root')).render(

@@ -8,7 +8,7 @@ function Navber() {
           to="/"
           className={({ isActive }) =>
             isActive
-              ? "text-[#7E90FE]"
+              ? "text-blue-500"
               : "text-gray-700"
           }
         >
@@ -21,7 +21,7 @@ function Navber() {
           to="/appliedJobs"
           className={({ isActive }) =>
             isActive
-              ? "text-[#7E90FE]"
+              ? "text-blue-500"
               : "text-gray-700"
           }
         >
@@ -34,7 +34,7 @@ function Navber() {
           to="/blogs"
           className={({ isActive }) =>
             isActive
-              ? "text-[#7E90FE]"
+              ? "text-blue-500"
               : "text-gray-700"
           }
         >
