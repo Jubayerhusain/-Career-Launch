@@ -21,7 +21,7 @@ function FeaturedJobs() {
           for career advancement.
         </p>
       </div>
-      <div className="grid grid-cols-2 gap-10 lg:grid-cols-3 my-14">
+      <div className="grid grid-cols-1 gap-10 lg:grid-cols-3 my-14">
         {
             allJobs.map(job=> <Job key={job.id} job={job}></Job>)
         }
