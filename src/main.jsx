@@ -7,11 +7,18 @@ import {
 } from "react-router-dom";
 import Layout from "./componants/Layout/Layout";
 import Error from './componants/ErrorPage/Error';
+import Home from './componants/Home/Home';
 const router = createBrowserRouter([
   {
     path: "/",
     element: <Layout />,
-    errorElement: <Error />
+    errorElement: <Error />,
+    children:[
+      {
+        path:"/",
+        element:<Home />
+      },
+    ]
   },
 ]);
 createRoot(document.getElementById('root')).render(
