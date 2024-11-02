@@ -2,7 +2,7 @@ import React from "react";
 import BanngerMan from "./../../assets/bannerMan.png";
 function Banner() {
   return (
-    <div className="hero bg-blue-50 pt-6">
+    <div className="hero bg-blue-50 pt-6 rounded-md">
       <div className="flex-row md:flex justify-around items-center lg:flex-row-reverse">
         <img src={BanngerMan} className="h-full" />
         <div className="ml-10">

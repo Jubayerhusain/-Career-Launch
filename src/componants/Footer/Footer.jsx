@@ -2,7 +2,7 @@ import React from "react";
 
 function Footer() {
   return (
-    <footer className="footer p-10 w-11/12 mx-auto bg-gradient-to-r from-cyan-500 to-blue-500 text-white py-24">
+    <footer className="footer p-10 w-12/12 md:w-11/12 mx-auto bg-gradient-to-r from-cyan-500 to-blue-500 text-white py-24 justify-around rounded-md">
       <aside>
         <svg
           width="50"
