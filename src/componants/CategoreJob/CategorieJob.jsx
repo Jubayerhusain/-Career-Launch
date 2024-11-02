@@ -1,6 +1,6 @@
 import { MdOutlineAccountTree } from "react-icons/md";
 function CategorieJob({ categorieJob }) {
-  console.log(categorieJob);
+//   console.log(categorieJob);
   const { id, logo, category_name, availability } = categorieJob;
   return (
     <div className="bg-blue-50 p-10 rounded-lg m-5 text-gray-700">

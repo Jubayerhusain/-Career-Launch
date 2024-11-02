@@ -3,7 +3,7 @@ import CategorieJob from "./../CategoreJob/CategorieJob";
 
 function JobCategoryList() {
   const categoriesJob = useLoaderData();
-  console.log(categoriesJob);
+//   console.log(categoriesJob);
   return (
     <div>
       <div className="my-14">
